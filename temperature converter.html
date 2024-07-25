@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Temperature converter</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="temperature-converter">
+            <div class="mobile">
+                <div id="clock"></div>
+                <div>
+                    <i class='bx bx-signal-4'></i>
+                    <i class='bx bx-wifi'></i>
+                    <i class='bx bx-battery'></i>
+                </div>
+            </div>
+        <h2>Temperature converter</h2>
+        <div class="result">
+            <span class="result-heading">Result(Celsius)</span>
+            <h2 class="celsius-value" id="celsius">1</h2>
+        </div>  
+        <div class="degree-type">
+             <div class="degree-feild">
+                <label for="degree">degrees</label>
+                <input type="number" name="degree" id="degree">
+             </div>
+             <div class="temp-field">
+                <label for="temp-type">Type</label>
+                <select name="temperatures" id="temp-type" autocomplete="on">
+                    <option value="fahrenheit" id="fahrenheit">fahrenheit</option>
+                    <option value="kelvin" id="kelvin">kelvin</option>
+                </select>
+             </div>
+        </div>  
+        <button id="convert-btn">CONVERT</button>
+        </div>
+    </div>
+    
+    
+    <script src="main.js"></script>
+</body>
+</html>
